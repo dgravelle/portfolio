@@ -1,0 +1,13 @@
+
+.header--main__img {
+    max-width: 462px;
+}
+
+ul.main-nav {
+    padding: 10px 0;
+    overflow: hidden;
+}
+
+ul.main-nav div[class*="col"] {
+    padding:0;
+}

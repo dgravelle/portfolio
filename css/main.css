@@ -1,13 +1,147 @@
+html { font-size: 20px; }
+h1, h2, p { color: #666; }
+p { font-size: 1rem;}
 
-.header--main__img {
-    max-width: 462px;
+.header--main {
+  padding: 50px;
+  padding-top: 100px;
+}
+.header--main h1 {
+  font-size: 4rem;
+  margin: 0;
+  margin: 32px 0;
+}
+/*.header--main__img {
+  max-width: 462px;
+  width: 100%;
+}*/
+@media (max-width:480px) {
+  .header--main {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .header--main h1 {
+    font-size: 3rem;
+  }
+}
+
+/* Navigation tweaks */
+
+.navbar--custom {
+  margin-left: -15px;
+  margin-right: -15px;
+  position: fixed;
+  width: 100%;
+  z-index: 9999;
 }
 
 ul.main-nav {
     padding: 10px 0;
     overflow: hidden;
+    margin-bottom: 0;
 }
 
 ul.main-nav div[class*="col"] {
     padding:0;
+}
+
+a.main-nav__li__a {
+    font-size: 125%;
+    color: white;
+}
+
+/* Section blocks */
+
+section.block {
+  margin-left: -15px;
+  margin-right: -15px;
+  padding: 100px 50px;
+}
+
+section.block h2, section.block p, section.block i {
+  color: white;
+  text-shadow: 2px 2px 3px rgba(0,0,0,0.5);
+}
+
+section.block h2 {
+  font-size: 3rem;
+  margin-bottom: 50px;
+}
+
+/* Contact Section */
+
+section.block.block--contact {
+  padding-bottom: 250px;
+}
+
+section.block.block--contact h3,
+section.block.block--contact i {
+  margin: 0;
+}
+
+section.block.block--contact h2,
+section.block.block--contact i {
+  text-shadow: none;
+  color: inherit;
+}
+
+section.block.block--contact h3 {
+  margin-bottom: 15px;
+}
+
+
+section.block.block--contact a > * {
+  color: rgba(66,165,245 ,1);
+}
+section.block.block--contact a:hover > * {
+  color: rgba(21,101,192 ,1);
+}
+
+section.block.block--contact a:hover {
+  color: rgba(21,101,192 ,1);
+  text-decoration: none;
+}
+
+
+section.block i.fa {
+  margin-bottom: 25px;
+}
+
+@media (max-width:480px) {
+  section.block {
+    padding: 25px;
+  }
+}
+/* Font Awesome extensions */
+
+.fa-xl {
+  font-size: 6rem;
+}
+/* background colors */
+
+.bg--blue--200 {
+  background-color: rgba(129,212,250 ,1);
+}
+.bg--blue--400 {
+  background-color: rgba(66,165,245 ,1);
+}
+
+.bg--blue--600 {
+  background-color: rgba(30,136,229 ,1);
+}
+
+.bg--blue--800 {
+  background-color: rgba(21,101,192 ,1);
+}
+
+.bg--green--400 {
+  background-color: rgba(102,187,106 ,1);
+}
+
+.bg--green--800 {
+  background-color: rgba(46,125,50 ,1);
+}
+
+.bg--green--900 {
+  background-color: rgba(27,94,32 ,1);
 }

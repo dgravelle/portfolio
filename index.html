@@ -11,50 +11,33 @@
 </head>
 <body>
   <div class="container-fluid">
-    <!-- Main Header -->
-    <header class="header--main">
-      <div class="row">
-        <div class="col-sm-6 col-sm-push-6">
-          <img src="img/dave_gravelle_sm.jpeg" alt="Dave Gravelle" class="img-responsive img-thumbnail img-circle center-block header--main__img">
-        </div>
-        <div class="col-sm-6 col-sm-pull-6">
-
-          <h1>Welcome</h1>
-          <p class="lead">Hello, my name is Dave Gravelle and I'm a Web Designer &amp; Developer based in Seattle.</p>
-          <p>I have several years of experience building accessible and mobile friendly web solutions.  What I love most about working on the web is the potential to impact other people's lives in a wide variety of ways.  Escpecially as the web becomes more and more ubiquitous in our lives.</p>
-          <p>I'm excited to learn more about Full Stack development at Galvanize as well as exploring more the Web Audio API and IoT.</p>
-
-        </div>
-      </div>
-    </header>
     <!-- Main Navigation -->
-    <section>
       <div class="row">
         <div class="col-sm-12">
-          <nav class="navbar-default">
+          <nav class="navbar-default navbar--custom bg--blue--800">
             <div class="container-fluid">
               <div class="row">
                 <ul class="list-unstyled main-nav">
+                  <div class="col-xs-4">
+                    <li class="main-nav__li text-center">
+                      <a href="#home" class="main-nav__li__a scroll-nav">
+                      <i class="fa fa-home center-block"></i>
+                      Home
+                      </a>
+                    </li>
+                  </div>
                 <div class="col-xs-4">
                   <li class="main-nav__li text-center">
-                    <a href="#work" class="main-nav__li__a">
-                    <i class="fa fa-code center-block"></i>
-                    Work Samples
+                    <a href="#moreAboutMe" class="main-nav__li__a scroll-nav">
+                    <i class="fa fa-user center-block"></i>
+                    About Me
                     </a>
                   </li>
                 </div>
                 <div class="col-xs-4">
                   <li class="main-nav__li text-center">
-                    <a href="#work" class="main-nav__li__a">
-                    <i class="fa fa-file-text-o center-block"></i>
-                    Resume
-                    </a>
-                  </li>
-                </div>
-                <div class="col-xs-4">
-                  <li class="main-nav__li text-center">
-                    <a href="#work" class="main-nav__li__a">
-                    <i class="fa fa-file-text-o center-block"></i>
+                    <a href="#contact" class="main-nav__li__a scroll-nav">
+                    <i class="fa fa-envelope center-block"></i>
                     Contact
                     </a>
                   </li>
@@ -65,14 +48,119 @@
           </nav>
         </div>
       </div>
-    </section>
+    <!-- Main Header -->
+    <header id="home" class="header--main">
+      <div class="row">
+        <div class="col-sm-12 text-center">
+          <img src="img/dave_gravelle_sm.jpeg" alt="Dave Gravelle" class="img-responsive img-thumbnail img-circle center-block header--main__img">
+          <h1>Welcome</h1>
+            <p>Hello, my name is Dave Gravelle and I'm a Web Developer based in Seattle.  I recently re-located from New Jersey to enroll in Galvanize’s Full Stack development program.  After my graduation I’d love to find a role as a junior developer where I can grow and expand my skill set.  </p>
+          <p><a href="#moreAboutMe" class=" moreAboutMe scroll-nav">
+            <strong>
+              More about me
+              <br>
+              <i class="fa fa-2x fa-chevron-down"></i>
+            </strong>
+          </a></p>
+        </div>
+      </div>
+    </header>
 
+    <!-- More about me -->
+    <section id="moreAboutMe" class="block block--moreAboutMe text-center bg--blue--200">
+      <div class="row">
+        <div class="col-sm-12">
+          <div class="content--container">
+            <i class="fa fa-xl fa-pencil"></i>
+            <h2>UX Design</h2>
+            <p>I began my career in tech as a UX designer building accessible user flows for Learning Ally’s web products.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+<!--
+    [ animated pencil icon ]
+UX Design
+I began my career in tech as a UX designer building accessible user flows for Learning Ally’s web products.
+
+< link to work samples ? >
+
+========================================================================= -->
+
+<section id="music" class="block block--music text-center bg--blue--400">
+  <div class="row">
+    <div class="col-sm-12">
+      <div class="content--container">
+        <i class="fa fa-xl fa-music"></i>
+        <h2>Music</h2>
+        <p>Beyond working on the web I’m a big fan of music, both listening and creating.</p>
+      </div>
+    </div>
   </div>
+</section>
+<!--
+[ music ]
+
+Beyond working on the web I’m a big fan of music, both listening and creating.  Links to work samples coming soon : )
+
+========================================================================= -->
+
+<section id="outdoors" class="block block--outdoors text-center bg--green--400">
+  <div class="row">
+    <div class="col-sm-12">
+      <div class="content--container">
+        <i class="fa fa-xl fa-tree"></i>
+        <p>I’m also outdoor enthusiast and can’t wait to explore the wilderness around Seattle.</p>
+      </div>
+    </div>
+  </div>
+</section>
+<!--
+[ animated tree icon ]
+
+I’m also outdoor enthusiast and can’t wait to explore the wilderness around Seattle.
+
+========================================================================= -->
+
+
+<section id="contact" class="block block--contact ">
+  <div class="row">
+    <div class="col-sm-12 text-center">
+      <h2>Get in touch!</h2>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-xs-6 col-sm-3 col-sm-offset-3 text-center">
+        <a href="mailto:dgravelle54@gmail.com" target="_blank">
+          <i class="contact__icon fa fa-envelope-o fa-5x"></i>
+            <h3>Email</h3>
+        </a>
+    </div>
+    <div class="col-xs-6 col-sm-3 text-center">
+      <a href="https://www.linkedin.com/pub/dave-gravelle/34/631/1b6" target="_blank">
+          <i class="contact__icon fa fa-linkedin-square fa-5x"></i>
+          <h3>Linkedin</h3>
+      </a>
+    </div><!--/.col-->
+  </div>
+</section>
+
+
+<!--
+
+Get in touch!
+
+email link
+linkedin link -->
+
+
+  </div><!-- /container -->
 
   <!-- Jquery 2.2.0 -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
   <!-- Bootstrap JS -->
   <srcipt src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></srcipt>
+  <script src="js/main.js"></script>
 
 
 </body>

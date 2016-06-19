@@ -89,7 +89,6 @@ section.block.block--contact h3 {
   margin-bottom: 15px;
 }
 
-
 section.block.block--contact a > * {
   color: rgba(66,165,245 ,1);
 }
@@ -101,7 +100,6 @@ section.block.block--contact a:hover {
   color: rgba(21,101,192 ,1);
   text-decoration: none;
 }
-
 
 section.block i.fa {
   margin-bottom: 25px;

@@ -1,3 +1,8 @@
+.main-content {
+  opacity: 0;
+  transition: opacity 1s ease;
+}
+
 html { font-size: 20px; }
 h1, h2, p { color: #666; }
 p { font-size: 1rem;}
@@ -200,7 +205,7 @@ section.block i.fa {
 /* background colors */
 
 .bg--grey--200{
-  background-color: rgba(238,238,238,1);
+  background-color: rgba(252,252,252,1);
 }
 
 .bg--grey--900{

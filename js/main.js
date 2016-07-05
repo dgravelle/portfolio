@@ -1,4 +1,10 @@
+
 $('document').ready(function(){
+
+
+  window.setTimeout(function() {
+    $('.main-content').css('opacity', '1');
+  }, 500)
 
   /*
 	*

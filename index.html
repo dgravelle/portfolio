@@ -18,19 +18,33 @@
             <div class="container-fluid">
               <div class="row">
                 <ul class="list-unstyled main-nav">
-                  <div class="col-xs-4">
+                  <div class="col-xs-3">
                     <li class="main-nav__li text-center">
                       <a href="#home" class="main-nav__li__a scroll-nav">
-                      <i class="fa fa-home center-block"></i>
+                      <i class="fa fa-2x fa-home center-block"></i>
                       Home
                       </a>
                     </li>
                   </div>
-                <div class="col-xs-4">
+                <div class="col-xs-3">
                   <li class="main-nav__li text-center">
                     <a href="#projects" class="main-nav__li__a scroll-nav">
-                    <i class="fa fa-user center-block"></i>
+                    <i class="fa fa-2x fa-user center-block"></i>
                     Projects
+                    </a>
+                  </li>
+                </div>
+                <div class="col-xs-3">
+                  <li class="main-nav__li text-center">
+                    <a href="https://www.linkedin.com/in/davegravelle" class="main-nav__li__a" target="_blank">
+                        <i class="fa fa-3x fa-linkedin-square"></i>
+                    </a>
+                  </li>
+                </div>
+                <div class="col-xs-3">
+                  <li class="main-nav__li text-center">
+                    <a href="https://www.github.com/dgravelle" class="main-nav__li__a" target="_blank">
+                        <i class="fa fa-3x fa-github"></i>
                     </a>
                   </li>
                 </div>
@@ -47,12 +61,6 @@
           <div class="col-sm-9">
             <h1>Dave <br> Gravelle</h1>
             <p>Hello, my name is Dave Gravelle and I'm a Web Developer based in Seattle.  I recently re-located from New Jersey to enroll in Galvanize’s Full Stack development program.  After my graduation I’d love to find a role as a junior developer where I can grow and expand my skill set.  </p>
-            <a href="https://www.linkedin.com/in/davegravelle" target="_blank">
-                <i class="contact__icon fa fa-linkedin-square fa-4x"></i>
-            </a>
-            <a href="https://www.github.com/dgravelle" target="_blank">
-                <i class="contact__icon fa fa-github fa-4x"></i>
-            </a>
           </div>
         </div>
       </div>
@@ -63,13 +71,14 @@
         <div class="row">
           <div class="col-sm-12">
             <h2>Projects</h2>
+            <blockquote>The following projects were completed as part of class work for Galvanize.</blockquote>
           </div>
         </div>
         <div class="row">
-          <div class="col-sm-6">
+          <div class="col-sm-6 col-md-4">
             <div class="card">
               <div class="card__image">
-                <img src="" alt="" class="img-responsive">
+                <img src="img/ngTea.png" alt="" class="img-responsive">
               </div>
               <div class="card__title">
                 <h3 class="card__h3">Angular Shopping Cart</h3>
@@ -77,10 +86,14 @@
               <div class="card--description">
                 <p class="card--description__p">Shopping cart application built using Angular</p>
               </div>
+              <div class="card__footer">
+                <a href="https://github.com/dgravelle/angular-shopping-cart" target="_blank" class="card__footer__link">
+                  <i class="fa fa-github fa-2x"></i>
+                </a>
+              </div>
             </div>
           </div>
-          <div class="col-sm-6">
-            <a href="https://dg-galvanize-reads.herokuapp.com/" target="_blank" class="card__link">
+          <div class="col-sm-6 col-md-4">
               <div class="card">
                 <div class="card__image gReads">
                   <img src="img/gReads.png" alt="" class="img-responsive">
@@ -91,24 +104,36 @@
                 <div class="card--description">
                   <p class="card--description__p">Library application built with Node and Express</p>
                 </div>
+                <div class="card__footer">
+                  <a href="https://dg-galvanize-reads.herokuapp.com/" target="_blank" class="card__footer__link">
+                    <i class="fa fa-eye fa-2x"></i>
+                  </a>
+                  <a href="https://github.com/dgravelle/greads" target="_blank" class="card__footer__link">
+                    <i class="fa fa-github fa-2x"></i>
+                  </a>
+                </div>
               </div>
-            </a>
           </div>
-          <div class="col-sm-6">
-
-            <a href="http://synth.surge.sh/" target="_blank" class="card__link">
-              <div class="card">
-                <div class="card__image">
-                  <img src="img/synth-2.png" alt="" class="img-responsive">
-                </div>
-                <div class="card__title">
-                  <h3 class="card__h3">Web synth</h3>
-                </div>
-                <div class="card--description">
-                  <p class="card--description__p">Simple synthesizer built using the web audio API</p>
-                </div>
+          <div class="col-sm-6 col-md-4">
+            <div class="card">
+              <div class="card__image">
+                <img src="img/synth-2.png" alt="" class="img-responsive">
               </div>
-            </a>
+              <div class="card__title">
+                <h3 class="card__h3">Web synth</h3>
+              </div>
+              <div class="card--description">
+                <p class="card--description__p">Simple synthesizer built using the web audio API</p>
+              </div>
+              <div class="card__footer">
+                <a href="https://sytnh.surge.sh" target="_blank" class="card__footer__link">
+                  <i class="fa fa-eye fa-2x"></i>
+                </a>
+                <a href="https://github.com/dgravelle/web-synth" target="_blank" class="card__footer__link">
+                  <i class="fa fa-github fa-2x"></i>
+                </a>
+              </div>
+            </div>
           </div>
         </div>
       </div>

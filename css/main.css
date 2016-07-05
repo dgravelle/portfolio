@@ -10,6 +10,9 @@ p { font-size: 1rem;}
 .header--main {
   padding: 50px;
   padding-top: 100px;
+  margin-left: -15px;
+  margin-right: -15px;
+  /*background: repeating-linear-gradient(90deg, #ddd, #ddd 2px, #eee 2px, #eee 40px)*/
 }
 .header--main h1 {
   font-size: 4rem;
@@ -48,8 +51,20 @@ ul.main-nav div[class*="col"] {
 }
 
 a.main-nav__li__a {
-    font-size: 125%;
     color: white;
+    transition: font-size 0.4s ease;
+}
+a.main-nav__li__a i.fa {
+  transition: transform 0.4s ease;
+}
+
+a.main-nav__li__a:hover {
+  text-decoration: none;
+  /*font-size: 125%;*/
+}
+
+a.main-nav__li__a:hover i.fa {
+  transform: scale(1.25);
 }
 
 /* Section blocks */
@@ -57,7 +72,7 @@ a.main-nav__li__a {
 section.block {
   margin-left: -15px;
   margin-right: -15px;
-  padding: 100px 50px;
+  padding: 25px 50px;
 }
 
 section.block h2,  section.block i {
@@ -68,6 +83,10 @@ section.block h2,  section.block i {
 section.block h2 {
   font-size: 3rem;
   margin-bottom: 50px;
+}
+
+section.block blockquote {
+  border-left: 5px solid #ccc;
 }
 
 /* Contact Section */
@@ -92,12 +111,12 @@ section.block.block--contact h3 {
 }
 
 
-section.block.block--contact a > * {
+/*section.block.block--contact a > * {
   color: rgba(66,165,245 ,1);
 }
 section.block.block--contact a:hover > * {
   color: rgba(21,101,192 ,1);
-}
+}*/
 
 section.block.block--contact a:hover {
   color: rgba(21,101,192 ,1);
@@ -125,15 +144,17 @@ section.block i.fa {
   max-width: 420px;
   transition: 0.4s ease box-shadow;
 }
+/*
   a.card__link:hover {
     text-decoration: none;
   }
   a.card__link:hover .card {
     box-shadow: 5px 8px 4px rgba(180,180,180,0.5), -5px 8px 4px rgba(180,180,180,0.5);
-  }
+  }*/
 
   .card__image {
     display: block;
+    min-height: 210px;
   }
 
   .card__title {
@@ -145,7 +166,31 @@ section.block i.fa {
     color: rgba(33,33,33,1);
   }
   .card--description {
-    padding: 12px 16px;
+    padding: 12px 16px 4px 16px;
+    border-bottom: 1px solid rgb(240,240,240);
+  }
+
+  .card__footer {
+    background-color: rgba(102,102,102,1);
+    height: 50px;
+    padding: 12px;
+    display: flex;
+    justify-content: flex-end;
+    align-content: center;
+  }
+
+    .card__footer a i.fa {
+      margin-bottom: 0;
+      color: #fff;
+      transition: transform 0.4s ease;
+    }
+
+    .card__footer a:hover i.fa {
+      transform: scale(1.25);
+    }
+
+  .card__footer__link {
+    margin-right: 25px;
   }
 /* Font Awesome extensions */
 

@@ -14,31 +14,37 @@
     <!-- Main Navigation -->
       <div class="row">
         <div class="col-sm-12">
-          <nav class="navbar-default navbar--custom bg--blue--800">
+          <nav class="navbar-default navbar--custom bg--grey--900">
             <div class="container-fluid">
               <div class="row">
                 <ul class="list-unstyled main-nav">
-                  <div class="col-xs-4">
+                  <div class="col-xs-3">
                     <li class="main-nav__li text-center">
                       <a href="#home" class="main-nav__li__a scroll-nav">
-                      <i class="fa fa-home center-block"></i>
+                      <i class="fa fa-2x fa-home center-block"></i>
                       Home
                       </a>
                     </li>
                   </div>
-                <div class="col-xs-4">
+                <div class="col-xs-3">
                   <li class="main-nav__li text-center">
-                    <a href="#moreAboutMe" class="main-nav__li__a scroll-nav">
-                    <i class="fa fa-user center-block"></i>
-                    About Me
+                    <a href="#projects" class="main-nav__li__a scroll-nav">
+                    <i class="fa fa-2x fa-code center-block"></i>
+                    Projects
                     </a>
                   </li>
                 </div>
-                <div class="col-xs-4">
+                <div class="col-xs-3">
                   <li class="main-nav__li text-center">
-                    <a href="#contact" class="main-nav__li__a scroll-nav">
-                    <i class="fa fa-envelope center-block"></i>
-                    Contact
+                    <a href="https://www.linkedin.com/in/davegravelle" class="main-nav__li__a" target="_blank">
+                        <i class="fa fa-3x fa-linkedin-square"></i>
+                    </a>
+                  </li>
+                </div>
+                <div class="col-xs-3">
+                  <li class="main-nav__li text-center">
+                    <a href="https://www.github.com/dgravelle" class="main-nav__li__a" target="_blank">
+                        <i class="fa fa-3x fa-github"></i>
                     </a>
                   </li>
                 </div>
@@ -49,111 +55,94 @@
         </div>
       </div>
     <!-- Main Header -->
-    <header id="home" class="header--main">
-      <div class="row">
-        <div class="col-sm-12 text-center">
-          <img src="img/dave_gravelle_sm.jpeg" alt="Dave Gravelle" class="img-responsive img-thumbnail img-circle center-block header--main__img">
-          <h1>Welcome</h1>
-            <p>Hello, my name is Dave Gravelle and I'm a Web Developer based in Seattle.  I recently re-located from New Jersey to enroll in Galvanize’s Full Stack development program.  After my graduation I’d love to find a role as a junior developer where I can grow and expand my skill set.  </p>
-          <p><a href="#moreAboutMe" class=" moreAboutMe scroll-nav">
-            <strong>
-              More about me
-              <br>
-              <i class="fa fa-2x fa-chevron-down"></i>
-            </strong>
-          </a></p>
+  <div class="main-content">
+    <header id="home" class="block header--main">
+      <div class="block-container">
+        <div class="row">
+          <div class="col-sm-9">
+            <h1>Dave <br> Gravelle</h1>
+            <p>Hello, my name is Dave Gravelle and I am a full-stack web developer with a background in UX/UI design.  I love working on teams that are passionate about their product and committed to making their users happy. If you'd like to collaborate and build something awesome,  <strong><a href="mailto:dgravelle54@gmail.com"> please get in touch!</a></strong></p>
+          </div>
         </div>
       </div>
     </header>
 
-    <!-- More about me -->
-    <section id="moreAboutMe" class="block block--moreAboutMe text-center bg--blue--200">
-      <div class="row">
-        <div class="col-sm-12">
-          <div class="content--container">
-            <i class="fa fa-xl fa-pencil"></i>
-            <h2>UX Design</h2>
-            <p>I began my career in tech as a UX designer building accessible user flows for Learning Ally’s web products.</p>
+    <section id="projects" class="block block--projects bg--grey--200">
+      <div class="block-container">
+        <div class="row">
+          <div class="col-sm-12">
+            <h2>Projects</h2>
+            <blockquote>The following projects were completed as part of class work for Galvanize.</blockquote>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-6 col-md-4">
+            <div class="card">
+              <div class="card__image">
+                <img src="img/ngTea.png" alt="" class="img-responsive">
+              </div>
+              <div class="card__title">
+                <h3 class="card__h3">Write All Night</h3>
+              </div>
+              <div class="card--description">
+                <p class="card--description__p">A web platform providing writers with data about their stories</p>
+              </div>
+              <div class="card__footer">
+                <a href="https://write-all-night.herokuapp.com" target="_blank" class="card__footer__link">
+                  <i class="fa fa-eye fa-2x"></i>
+                </a>
+                <a href="https://github.com/dgravelle/write-all-night" target="_blank" class="card__footer__link">
+                  <i class="fa fa-github fa-2x"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-4">
+              <div class="card">
+                <div class="card__image gReads">
+                  <img src="img/gReads.png" alt="" class="img-responsive">
+                </div>
+                <div class="card__title">
+                  <h3 class="card__h3">gReads</h3>
+                </div>
+                <div class="card--description">
+                  <p class="card--description__p">Library application built with Node and Express</p>
+                </div>
+                <div class="card__footer">
+                  <a href="https://dg-galvanize-reads.herokuapp.com/" target="_blank" class="card__footer__link">
+                    <i class="fa fa-eye fa-2x"></i>
+                  </a>
+                  <a href="https://github.com/dgravelle/greads" target="_blank" class="card__footer__link">
+                    <i class="fa fa-github fa-2x"></i>
+                  </a>
+                </div>
+              </div>
+          </div>
+          <div class="col-sm-6 col-md-4">
+            <div class="card">
+              <div class="card__image">
+                <img src="img/synth-2.png" alt="" class="img-responsive">
+              </div>
+              <div class="card__title">
+                <h3 class="card__h3">Web synth</h3>
+              </div>
+              <div class="card--description">
+                <p class="card--description__p">Simple synthesizer built using the web audio API</p>
+              </div>
+              <div class="card__footer">
+                <a href="https://synth.surge.sh" target="_blank" class="card__footer__link">
+                  <i class="fa fa-eye fa-2x"></i>
+                </a>
+                <a href="https://github.com/dgravelle/web-synth" target="_blank" class="card__footer__link">
+                  <i class="fa fa-github fa-2x"></i>
+                </a>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </section>
-<!--
-    [ animated pencil icon ]
-UX Design
-I began my career in tech as a UX designer building accessible user flows for Learning Ally’s web products.
-
-< link to work samples ? >
-
-========================================================================= -->
-
-<section id="music" class="block block--music text-center bg--blue--400">
-  <div class="row">
-    <div class="col-sm-12">
-      <div class="content--container">
-        <i class="fa fa-xl fa-music"></i>
-        <h2>Music</h2>
-        <p>Beyond working on the web I’m a big fan of music, both listening and creating.</p>
-      </div>
     </div>
-  </div>
-</section>
-<!--
-[ music ]
-
-Beyond working on the web I’m a big fan of music, both listening and creating.  Links to work samples coming soon : )
-
-========================================================================= -->
-
-<section id="outdoors" class="block block--outdoors text-center bg--green--400">
-  <div class="row">
-    <div class="col-sm-12">
-      <div class="content--container">
-        <i class="fa fa-xl fa-tree"></i>
-        <p>I’m also outdoor enthusiast and can’t wait to explore the wilderness around Seattle.</p>
-      </div>
-    </div>
-  </div>
-</section>
-<!--
-[ animated tree icon ]
-
-I’m also outdoor enthusiast and can’t wait to explore the wilderness around Seattle.
-
-========================================================================= -->
-
-
-<section id="contact" class="block block--contact ">
-  <div class="row">
-    <div class="col-sm-12 text-center">
-      <h2>Get in touch!</h2>
-    </div>
-  </div>
-  <div class="row">
-    <div class="col-xs-6 col-sm-3 col-sm-offset-3 text-center">
-        <a href="mailto:dgravelle54@gmail.com" target="_blank">
-          <i class="contact__icon fa fa-envelope-o fa-5x"></i>
-            <h3>Email</h3>
-        </a>
-    </div>
-    <div class="col-xs-6 col-sm-3 text-center">
-      <a href="https://www.linkedin.com/pub/dave-gravelle/34/631/1b6" target="_blank">
-          <i class="contact__icon fa fa-linkedin-square fa-5x"></i>
-          <h3>Linkedin</h3>
-      </a>
-    </div><!--/.col-->
-  </div>
-</section>
-
-
-<!--
-
-Get in touch!
-
-email link
-linkedin link -->
-
-
   </div><!-- /container -->
 
   <!-- Jquery 2.2.0 -->

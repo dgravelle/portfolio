@@ -9,7 +9,7 @@ p { font-size: 1rem;}
 
 .block-container {
   margin: 0 auto;
-  max-width: 960px;
+  max-width: 1080px;
 }
 
 .header--main {
@@ -149,17 +149,15 @@ section.block i.fa {
   max-width: 420px;
   transition: 0.4s ease box-shadow;
 }
-/*
-  a.card__link:hover {
-    text-decoration: none;
-  }
-  a.card__link:hover .card {
-    box-shadow: 5px 8px 4px rgba(180,180,180,0.5), -5px 8px 4px rgba(180,180,180,0.5);
-  }*/
 
   .card__image {
     display: block;
-    min-height: 210px;
+    min-height: 240px;
+  }
+
+  .card__image img {
+    min-height: 240px;
+    max-height: 270px;
   }
 
   .card__title {
@@ -173,15 +171,17 @@ section.block i.fa {
   .card--description {
     padding: 12px 16px 4px 16px;
     border-bottom: 1px solid rgb(240,240,240);
+    height: 120px;
   }
 
   .card__footer {
+    align-content: center;
     background-color: rgba(102,102,102,1);
     height: 50px;
     padding: 12px;
-    display: flex;
-    justify-content: flex-end;
-    align-content: center;
+    margin-left: -1px;
+    margin-right: -1px;
+    text-align: center;
   }
 
     .card__footer a i.fa {
@@ -195,7 +195,7 @@ section.block i.fa {
     }
 
   .card__footer__link {
-    margin-right: 25px;
+    margin-right: 12px;
   }
 /* Font Awesome extensions */
 
@@ -205,7 +205,7 @@ section.block i.fa {
 /* background colors */
 
 .bg--grey--200{
-  background-color: rgba(252,252,252,1);
+  background-color: rgba(238,238,238 ,1);
 }
 
 .bg--grey--900{
